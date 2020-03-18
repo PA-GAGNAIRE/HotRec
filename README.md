@@ -11,4 +11,4 @@
 
 3./ Execute the pipeline within the container
 
-`sudu singularity run --writable -B /home/pagagnaire/TEST_RUN:/RUN Simul_LDhelmet.sif /home/RUN_LD/run_ld_12_conditions.sh`
+`sudo singularity run --writable -B /home/pagagnaire/TEST_RUN:/RUN Simul_LDhelmet.sif /home/RUN_LD/run_ld_12_conditions.sh`
