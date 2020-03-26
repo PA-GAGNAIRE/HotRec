@@ -11,18 +11,7 @@
 
 3./Prepare a local INPUT/OUTPUT folder `/path-to-that-directory/REPLICATE_RUN_i/` containing the recombination map file `genetic_map_large_scale_hotspot_i.txt` used for the MSprime simulations and the 12 empty output sub-folders where the results will be written:
 
-`mkdir ne25m_ss10_bp5`
-`mkdir ne25m_ss10_bp10`
-`mkdir ne25m_ss10_bp50`
-`mkdir ne25m_ss20_bp5`
-`mkdir ne25m_ss20_bp10`
-`mkdir ne25m_ss20_bp50`
-`mkdir ne250m_ss10_bp5`
-`mkdir ne250m_ss10_bp10`
-`mkdir ne250m_ss10_bp50`
-`mkdir ne250m_ss20_bp5`
-`mkdir ne250m_ss20_bp10`
-`mkdir ne250m_ss20_bp50`
+`mkdir ne25m_ss10_bp5 ne25m_ss10_bp10 ne25m_ss10_bp50 ne25m_ss20_bp5 ne25m_ss20_bp10 ne25m_ss20_bp50 ne250m_ss10_bp5 ne250m_ss10_bp10 ne250m_ss10_bp50 ne250m_ss20_bp5 ne250m_ss20_bp10 ne250m_ss20_bp50`
 
 4./ Execute the whole pipeline inside the container, using a binding of the local folder `/path-to-that-directory/REPLICATE_RUN_i/` with the `/RUN/` folder located at the root of the container.
 
