@@ -32,7 +32,7 @@ The sript prepares a directory named `Replicate_Run_4` with 3 subfolders:
 `singularity run -B /local-path-to/REPLICATE_RUN_4:/RUN -B /local-path-to/RUN_LD:/home/RUN_LD -B /local-path-to/TMP_OUT:/home/ldhelmet/LDhelmet_v1.10/output /local-path-to/Simul_LDhelmet.sif /home/RUN_LD/run_ld_12_conditions.sh`
 
 
-3./ Execute the whole pipeline inside the container on the MBB cluster using `qsub_LDhelmet.sh`:
+3./ Execute the whole pipeline inside the container on the MBB cluster using the `qsub_LDhelmet.sh` placed in the run directory `Replicate_Run_4`:
 
 `cd ./Replicate_Run_4`
 
