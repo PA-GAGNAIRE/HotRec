@@ -13,7 +13,7 @@ The first arg is an interger for *replicate run i* and the second arg is the nam
 
 `bash build_run_dir.sh 4 genetic_map_large_scale_hotspot_4.txt`
 
-The sript prepares a directory with 3 subfolders:
+The sript prepares a directory named `Replicate_Run_4` with 3 subfolders:
 
 `/RUN_LD/` Contains the scripts necessary for each of the 12 tested conditions. Used as temporary, can be deleted when finished.
 
