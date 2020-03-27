@@ -24,6 +24,13 @@ The sript prepares a directory named `Replicate_Run_4` with 3 subfolders:
 `/REPLICATE_RUN_4/` The OUTPUT folder with 12 sub-folders corresponding to the 12 tested conditions, each containing 10 replicate runs of simulations with MSprime and LDhelmet analysis.
 
 
-2./ Execute the whole pipeline inside the container, using a binding of the local folder `/path-to-that-directory/REPLICATE_RUN_i/` with the `/RUN/` folder located at the root of the container.
+2./ Execute the whole pipeline inside the container, using a binding of each of the 3 local subfolders `/REPLICATE_RUN_i/`, `/TMP_OUT/` and `/RUN_LD/` with folders located within the container.
 
-`sudo singularity run --writable -B /home/pagagnaire/TEST_RUN:/RUN Simul_LDhelmet.sif /home/RUN_LD/run_ld_12_conditions.sh`
+`cd ./Replicate_Run_4`
+`singularity run -B /local-path-to/REPLICATE_RUN_4:/RUN -B /local-path-to/RUN_LD:/home/RUN_LD -B /local-path-to/TMP_OUT:/home/ldhelmet/LDhelmet_v1.10/output /local-path-to/Simul_LDhelmet.sif /home/RUN_LD/run_ld_12_conditions.sh`
+
+
+3./ Execute the whole pipeline inside the container on the MBB cluster using `qsub_LDhelmet.sh`:
+
+`cd ./Replicate_Run_4`
+`qsub_LDhelmet.sh`
