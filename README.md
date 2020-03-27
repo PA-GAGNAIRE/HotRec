@@ -2,8 +2,8 @@
 
 ### ISEM Repository for ANR project HotRec
 
-1/ Build a local INPUT/OUTPUT directory for runnning the LDhelmet simulation pipeline using `build_run_dir.sh`.
-The first arg is an interger for run i and the second arg is the name of the input recombination landscape file used for run i.
+1/ Build a local INPUT/OUTPUT directory using `build_run_dir.sh` for writting the output of the LDhelmet simulation pipeline.
+The first arg is an interger for *replicate run i* and the second arg is the name of the input recombination landscape file used for *run i*.
 
 
 *Example for the simulated recombination landscape replicate 4 in map file `genetic_map_large_scale_hotspot_4.txt` :*
