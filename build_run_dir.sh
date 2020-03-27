@@ -14,6 +14,7 @@ cd ./Replicate_Run_$replicate_run
 
 	git clone https://github.com/PA-GAGNAIRE/HotRec.git
 	mv ./HotRec/RUN_LD ./
+	mv ./HotRec/qsub_LDhelmet.sh ./
 	rm -r -f ./HotRec/
 
 	cp ../$2 ./
