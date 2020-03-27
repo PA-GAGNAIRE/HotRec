@@ -15,13 +15,13 @@ The first arg is an interger for *replicate run i* and the second arg is the nam
 
 The sript prepares a directory with 3 subfolders:
 
-`RUN_LD` Contains the scripts necessary for each of the 12 tested conditions. Used as temporary, can be deleted when finished.
+`/RUN_LD/` Contains the scripts necessary for each of the 12 tested conditions. Used as temporary, can be deleted when finished.
 
 
-`TMP_OUT` Used as temporary forlder for LDhelmet outputs, can be deleted when finished.
+`/TMP_OUT/` Used as temporary forlder for LDhelmet outputs, can be deleted when finished.
 
 
-`REPLICATE_RUN_4` The OUTPUT folder with 12 sub-folders corresponding to the 12 tested conditions, each containing 10 replicate runs of simulations with MSprime and LDhelmet analysis.
+`/REPLICATE_RUN_4/` The OUTPUT folder with 12 sub-folders corresponding to the 12 tested conditions, each containing 10 replicate runs of simulations with MSprime and LDhelmet analysis.
 
 
 2./ Execute the whole pipeline inside the container, using a binding of the local folder `/path-to-that-directory/REPLICATE_RUN_i/` with the `/RUN/` folder located at the root of the container.
